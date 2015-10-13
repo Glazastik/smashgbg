@@ -524,8 +524,8 @@ a.btn:hover {
 }
 
 .btn-circle.btn-dark {
-    border: 2px solid #666;
-    color: #666;
+    border: 2px solid #706bda;
+    color: #706bda;
 }
 
 
@@ -539,13 +539,13 @@ a.btn:hover {
 .btn-circle.btn-dark :hover,
 .btn-circle.btn-dark :focus {
     outline: 0;
-    color: #999;
+    color: #706bda;
     background: #fff;
 }
 
 .btn-circle.btn-dark :hover i,
 .btn-circle.btn-dark :focus i{
-    color: #999;
+    color: #706bda;
 }
 
 .page-scroll .btn-circle i.animated {
