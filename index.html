@@ -37,20 +37,21 @@
 	<link href="color/default.css" rel="stylesheet">
   <link href='js/fullcalendar.css' rel='stylesheet' />
   <link href='js/fullcalendar.print.css' rel='stylesheet' media='print' />
+  <script src='js/lang-all.js'></script>
   <script>
 
   	$(document).ready(function() {
 
   		$('#calendarbox').fullCalendar({
 
-  			// THIS KEY WON'T WORK IN PRODUCTION!!!
-  			// To make your own Google API key, follow the directions here:
   			// http://fullcalendar.io/docs/google_calendar/
   			googleCalendarApiKey: 'AIzaSyA43Jdsqm4O_rVAjznLYinOuh_R2iACfSs',
 
   			// US Holidays
   			events: 'dfuk0bm5s24ukoa0mid3lb0roc@group.calendar.google.com',
         firstDay: 1,
+        lang: 'sv',
+        weekNumbers: true,
   			eventClick: function(event) {
   				// opens events in a popup window
   				window.open(event.url, 'gcalevent', 'width=700,height=600');
