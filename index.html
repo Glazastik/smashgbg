@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Göteborgs Smashförening</title>
+    <!-- Core JavaScript Files -->
+    <script src='lib/moment.min.js'></script>
+    <script src='lib/jquery.min.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+  <!-- Kalender -->
+  <script src='js/fullcalendar.min.js'></script>
+  <script src='js/gcal.js'></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+  <link href='js/fullcalendar.css' rel='stylesheet' />
+  <link href='js/fullcalendar.print.css' rel='stylesheet' media='print' />
+  <script>
+
+  	$(document).ready(function() {
+
+  		$('#calendarbox').fullCalendar({
+
+  			// THIS KEY WON'T WORK IN PRODUCTION!!!
+  			// To make your own Google API key, follow the directions here:
+  			// http://fullcalendar.io/docs/google_calendar/
+  			googleCalendarApiKey: 'AIzaSyA43Jdsqm4O_rVAjznLYinOuh_R2iACfSs',
+
+  			// US Holidays
+  			events: 'dfuk0bm5s24ukoa0mid3lb0roc@group.calendar.google.com',
+        firstDay: 1,
+  			eventClick: function(event) {
+  				// opens events in a popup window
+  				window.open(event.url, 'gcalevent', 'width=700,height=600');
+  				return false;
+  			},
+
+  			loading: function(bool) {
+  				$('#loading').toggle(bool);
+  			}
+
+  		});
+
+  	});
+
+  </script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+
+		<div class="slogan">
+			<a href="index.html"><img src="img/logo.png" alt="" /></a>
+		</div>
+		<div class="page-scroll">
+			<a href="#about">
+				<i class="fa fa-angle-down fa-5x animated"></i>
+			</a>
+		</div>
+    </section>
+	<!-- /Section: intro -->
+
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-12">
+
+                                          <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav">
+                                                                  <li class="active"><a href="#intro">Intro</a></li>
+                                                                  <li><a href="#about">Om Föreningen</a></li>
+                                                                  <li><a href="#member">Bli Medlem</a></li>
+														                                      <li><a href="#calendar">Kalender</a></li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div>
+    <!-- /Navigation -->
+
+	<!-- Section: about -->
+    <section id="about" class="home-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+
+						<div class="section-heading text-center">
+						<div>
+							<h2>Göteborgs Smashförening</h2>
+						</div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+					<img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
+				</div>
+				<div class="col-md-6">
+					<p><strong>En förening för allt smashrelaterat i Göteborg!</strong></p>
+					<p>
+					Göteborgs Smashförening arbetar med att främja Smash i Göteborgsområdet, med fokus på Super Smash Bros. Melee. Vi anordnar speldagar och turneringar, och
+					spelare av alla nivåer. Det är gratis att komma och testa på! Man kan även bli medlem i vår förening, mer information nedan.
+
+          <blockquote>Adress:<br />
+          Kålltorpsgatan 2<br />416 52 Göteborg<br />
+          <a href="https://www.google.se/maps/place/57%C2%B042'58.7%22N+12%C2%B000'57.7%22E/@57.7163075,12.0149026,314m/data=!3m2!1e3!4b1!4m2!3m1!1s0x0:0x0?hl=sv" target="_blank">
+            Google Maps-länk</a>
+          </blockquote>
+					</p>
+          <strong>Kontakt:</strong>
+					<a href="https://www.facebook.com/groups/319537681508983/" target="_blank" class="btn btn-skin btn-lg btn-scroll">Smash i Göteborg på Facebook</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /Section: about -->
+
+	<!-- Section: separator -->
+    <section class="separator home-section parallax text-center" data-stellar-background-ratio="0.5"></section>
+	<!-- /Section: separator -->
+
+
+	<!-- Section: gallery -->
+	<!-- /Section: services -->
+
+  <section id="member" class="home-section text-center">
+
+    <div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+
+					<div class="section-heading">
+					<div>
+					<h2>Bli föreningsmedlem!</h2>
+          </div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+  </section>
+  <section class="separator home-section parallax text-center" data-stellar-background-ratio="0.5"></section>
+  <section id="calendar" class="home-section text-center">
+
+    <div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+
+					<div class="section-heading">
+					<div>
+					<h2>Kalender för Fängelset</h2>
+          <p>Våra speldagar och turneringar, <a href="https://www.google.com/calendar/embed?src=dfuk0bm5s24ukoa0mid3lb0roc%40group.calendar.google.com&ctz=Europe/Stockholm" target="_blank">länk</a></p>
+					</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+    <div id='loading'>loading...</div>
+
+  	<div id='calendarbox'></div>
+  </section>
+
+
+
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<p>&copy;Copyright 2015 - Göteborgs Smashförening - design by <a href="http://bootstraptaste.co">Bootstrap Themes</a></p>
+				</div>
+                <!--
+                    All links in the footer should remain intact.
+                    Licenseing information is available at: http://bootstraptaste.com/license/
+                    You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Lonely
+                -->
+			</div>
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>
