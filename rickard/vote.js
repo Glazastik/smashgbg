@@ -1,6 +1,6 @@
 $(function() {
   $.ajax({
-      url: "https://rickardsvikarie.se/wp-admin/admin-ajax.php",
+      url: "http://cors.io/?u=https://rickardsvikarie.se/wp-admin/admin-ajax.php",
       type: "POST",
       data: {
           action: "rv_vote",
