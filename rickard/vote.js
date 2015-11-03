@@ -1,13 +1,12 @@
 $(function() {
   $.ajax({
-      url: "http://cors.io/?u=https://rickardsvikarie.se/wp-admin/admin-ajax.php",
+      url: "https://rickardsvikarie.se/wp-admin/admin-ajax.php",
+      crossOrigin: true,
       type: "POST",
       data: {
           action: "rv_vote",
           post_id: "147"
       },
       dataType: "json"
-  }).done(function ( data ) {
-  $('#result').append(data);
-});
+  });
 });
